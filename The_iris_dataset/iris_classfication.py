@@ -51,3 +51,4 @@ X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=
 models = []
 models.append(('LR', LogisticRegression(solver = 'liblinear', multi_class='ovr')))
 models.append(('LDA', LinearDIscriminantAnalysis()))
+models.append(('KNN', KNeighborsClassifier()))
