@@ -34,7 +34,8 @@ plt.show()
 #histograms
 dataset.hist()
 plt.show()
-'''
+
 #scatter plot matrix
 scatter_matrix(dataset)
 plt.show()
+'''
