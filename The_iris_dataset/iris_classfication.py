@@ -50,7 +50,7 @@ X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=
 
 models = []
 models.append(('LR', LogisticRegression(solver = 'liblinear', multi_class='ovr')))
-models.append(('LDA', LinearDIscriminantAnalysis()))
+models.append(('LDA', LinearDiscriminantAnalysis()))
 models.append(('KNN', KNeighborsClassifier()))
 models.append(('CART', DecisionTreeClassifier()))
 models.append(('NB', GaussianNB()))
@@ -64,4 +64,4 @@ for name, model in models:
     cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring='accuracy')
     results.append(cv_results)
     names.append(name)
-    
+    print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
