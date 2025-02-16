@@ -24,3 +24,4 @@ dataset = read_csv(url, names=names)
 
 print(dataset.shape)
 print(dataset.head(20))
+print(dataset.describe())
