@@ -72,3 +72,6 @@ plt.boxplot(results, labels=names)
 plt.title('Algorithm Comparison')
 plt.show()
 '''
+
+# Make Predictions on validation dataset
+model = SVC(gamma='auto')
