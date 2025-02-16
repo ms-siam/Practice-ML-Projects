@@ -39,13 +39,14 @@ plt.show()
 scatter_matrix(dataset)
 plt.show()
 '''
-'''
+
 #Split out validation dataset
 array = dataset.values
 X = array[:,0:4]
 y = array[:,4]
 X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1)
 
+'''
 #Spot Check Algorithms
 
 models = []
@@ -75,3 +76,5 @@ plt.show()
 
 # Make Predictions on validation dataset
 model = SVC(gamma='auto')
+model.fit(X_train, Y_train)
+predictions = model.predict(X_validation)
