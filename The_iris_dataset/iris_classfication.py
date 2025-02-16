@@ -39,7 +39,7 @@ plt.show()
 scatter_matrix(dataset)
 plt.show()
 '''
-
+'''
 #Split out validation dataset
 array = dataset.values
 X = array[:,0:4]
@@ -71,3 +71,4 @@ for name, model in models:
 plt.boxplot(results, labels=names)
 plt.title('Algorithm Comparison')
 plt.show()
+'''
