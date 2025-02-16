@@ -30,3 +30,7 @@ print(dataset.groupby('class').size())
 #box and whiskerplots
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 plt.show()
+
+#histograms
+dataset.hist()
+plt.show()
