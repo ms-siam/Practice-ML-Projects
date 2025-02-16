@@ -58,3 +58,4 @@ models.append(('SVM', SVC(gamma='auto')))
 
 # evaluate each model in turn
 results = []
+names = []
