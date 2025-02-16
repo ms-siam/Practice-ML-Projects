@@ -52,3 +52,4 @@ models = []
 models.append(('LR', LogisticRegression(solver = 'liblinear', multi_class='ovr')))
 models.append(('LDA', LinearDIscriminantAnalysis()))
 models.append(('KNN', KNeighborsClassifier()))
+models.append(('CART', DecisionTreeClassifier()))
